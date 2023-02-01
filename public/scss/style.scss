@@ -1,0 +1,43 @@
+* {
+    cursor: none;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+body:has(button:hover) {
+    .cur {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.words,
+.false {
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    font-size: 2rem;
+}
+
+.lives {
+    margin-top: 10px;
+}
+
+.cur {
+    transition: all 200ms ease, top 0ms, left 0ms;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    mix-blend-mode: difference;
+    backface-visibility: hidden;
+    z-index: 1;
+    border-radius: 100vmax;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}

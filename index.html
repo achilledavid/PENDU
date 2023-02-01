@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./public/css/reset.css">
+        <link rel="stylesheet" href="./public/css/style.css">
+        <script src="./script.js" defer></script>
+        <title>Jeu du pendu</title>
+    </head>
+
+    <body>
+        <p class="cur"></p>
+        <div class="words"></div>
+        <input class="letter" type="text" maxlength="1" placeholder="enter a letter" onchange="getLetter()">
+        <button onclick="getWord()">get word</button>
+        <p class="lives">lives : <span>10</span></p>
+        <div class="false"></div>
+    </body>
+
+</html>

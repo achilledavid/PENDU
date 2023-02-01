@@ -1,0 +1,16 @@
+{
+  "name": "pendu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "sass": "sass --watch ./public/scss/style.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.57.1"
+  }
+}
